@@ -1,4 +1,4 @@
-import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   // Smooth scroll function
@@ -53,6 +53,14 @@ const Footer = () => {
             </a>
           ))}
         </div>
+
+        <a
+          href="mailto:basantan109@gmail.com"
+          className="mt-6 inline-flex items-center gap-2 text-sm text-gray-300 transition hover:text-purple-500"
+        >
+          <FaEnvelope />
+          basantan109@gmail.com
+        </a>
 
         {/* Copyright Text */}
         <p className="text-sm text-gray-400 mt-6">
