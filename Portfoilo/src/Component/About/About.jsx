@@ -13,10 +13,11 @@ const TypingEffect = () => {
   useEffect(() => {
     const isComplete = text === currentText;
     const isEmpty = text.length === 0;
-    const delay = isComplete ? 2000 : isEmpty ? 500 : isErasing ? 50 : 100;
+    const delay =
+      !isErasing && isComplete ? 2000 : isEmpty ? 500 : isErasing ? 50 : 100;
 
     const timeout = setTimeout(() => {
-      if (isComplete) {
+      if (isComplete && !isErasing) {
         setIsErasing(true);
       } else if (isEmpty && isErasing) {
         setIsErasing(false);
