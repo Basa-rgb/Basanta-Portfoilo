@@ -41,7 +41,7 @@ const Work = () => {
 
   return (
     <section
-      id="projects"
+      id="work"
       className="py-24 px-[12vw] md:px-[7vw] lg:px-[10vw] font-sans relative"
     >
       {/* Section Title */}
